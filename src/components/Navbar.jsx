@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { MenuElements } from '../data/MenuElements';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -12,7 +14,10 @@ class Navbar extends React.Component {
   render() {
     return (
       <>
-        <ul>
+        <ul className={this.state.clicked ? 'navbar - menu active' : 'navbar-menu'}>
+          {MenuElements.map((item) => {
+
+          })}
           <li>
             <a href="#ej1">Ejercicio 1</a>
           </li>
